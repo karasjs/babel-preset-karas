@@ -1,0 +1,37 @@
+{
+  "name": "@babel/preset-karas",
+  "version": "7.10.0",
+  "description": "Babel preset for all Karas plugins.",
+  "author": "army8735 <army8735@qq.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karasjs/babel-preset-karas.git"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "dev": "rollup -c rollup.config.js --watch"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.10.4",
+    "@babel/plugin-transform-react-display-name": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-development": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.10.4",
+    "@babel/plugin-transform-react-jsx-source": "^7.10.4",
+    "@babel/plugin-transform-react-pure-annotations": "^7.10.4"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.10.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "rollup": "^2.26.6",
+    "rollup-plugin-babel": "^4.4.0",
+    "webstorm-disable-index": "^1.2.0"
+  }
+}
