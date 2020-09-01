@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-karas",
-  "version": "7.10.0",
+  "version": "7.10.1",
   "description": "Babel preset for all Karas plugins.",
   "author": "army8735 <army8735@qq.com>",
   "license": "MIT",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.11.0",
+    "babel-preset-karas": "^7.10.0",
     "rollup": "^2.26.6",
     "rollup-plugin-babel": "^4.4.0",
     "webstorm-disable-index": "^1.2.0"

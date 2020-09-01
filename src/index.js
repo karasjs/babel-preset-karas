@@ -9,7 +9,7 @@ import { types as t } from "@babel/core";
 
 const source = t.react.isCompatTag;
 t.react.isCompatTag = function(tagName) {
-  if (tagName.charAt(0) === '$') {
+  if (tagName && tagName.charAt(0) === '$') {
     return true;
   }
   return source(tagName);
