@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-karas",
-  "version": "7.10.1",
+  "version": "7.10.2",
   "description": "Babel preset for all Karas plugins.",
   "author": "army8735 <army8735@qq.com>",
   "license": "MIT",

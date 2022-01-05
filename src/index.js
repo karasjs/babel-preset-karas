@@ -7,12 +7,19 @@ import transformReactJSXSelf from "@babel/plugin-transform-react-jsx-self";
 import transformReactPure from "@babel/plugin-transform-react-pure-annotations";
 import { types as t } from "@babel/core";
 
-const source = t.react.isCompatTag;
+const isCompatTag = t.react.isCompatTag;
 t.react.isCompatTag = function(tagName) {
   if (tagName && tagName.charAt(0) === '$') {
     return true;
   }
-  return source(tagName);
+  return isCompatTag(tagName);
+};
+const isReactComponent = t.react.isReactComponent;
+t.react.isReactComponent = function(tagName) {
+  if(tagName === '$') {
+    return true;
+  }
+  return isReactComponent(tagName);
 };
 
 export default declare((api, opts) => {
